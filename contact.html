@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required /><br><br>
+      <input type="email" placeholder="Your Email" required /><br><br>
+      <button type="submit">Send</button>
+    </form>
+
+    <p id="status"></p>
+  </div>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      document.getElementById("status").innerText =
+        "Thank you! Your message has been sent ✅";
+    }
+  </script>
+
+</body>
+</html>

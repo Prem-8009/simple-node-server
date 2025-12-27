@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to My Node.js Server</h1>
+    <p>This is an interactive Node.js web server project.</p>
+
+    <button onclick="changeText()">Click Me</button>
+    <p id="msg"></p>
+  </div>
+
+  <script>
+    function changeText() {
+      document.getElementById("msg").innerText =
+        "You just interacted with JavaScript 🚀";
+    }
+  </script>
+  <button onclick="goTime()">Show Server Time</button>
+
+<script>
+  function goTime() {
+    window.location.href = "/time";
+  }
+</script>
+
+
+</body>
+</html>
